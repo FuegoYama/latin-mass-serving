@@ -1,0 +1,441 @@
+% Instructions for Serving Low Mass
+% Created: August 14, 2025
+% Edited: August 26, 2025
+\documentclass[12pt]{article}
+
+% packages
+\usepackage[top=2.5cm,left=2.5cm,right=2.5cm,bottom=2.5cm,marginparwidth=1in,marginparsep=2ex]{geometry} % page layout
+\usepackage[utf8]{inputenc} % input encodings into TeX-speak
+\usepackage[letterspace=250]{microtype} % typographic precision
+\usepackage{babel} % international typographical support; [other language,english]
+\usepackage{graphicx}
+\usepackage{enumitem} % more control over list environments
+\usepackage{calc} % calculates lengths and counters; used primarily for calculating environment label lengths
+\usepackage{soul} % letter spacing, underlining, strikeouts
+\usepackage{paracol} % multiple texts in parallel columns
+\usepackage{multicol} % one text in multiple columns
+\usepackage{booktabs} % table options
+\usepackage{afterpage}
+\usepackage{ebgaramond}
+
+% headers
+\newcommand{\headerone}[2]{\begin{center}\textsc{\Huge\lsstyle #1}\paragraphspace\Large\scshape#2\end{center}\paragraphspace} % main title
+\newcommand{\headertwo}[1]{\begin{center}\textsc{\LARGE #1}\end{center}\quotespace} % highest section title
+\newcommand{\headerthree}[1]{\textup{\Large #1}\paragraphspace}
+\newcommand{\paragraphheader}[1]{\textbf{\large #1}} % new segment or thought within a section
+\newcommand{\subtitle}
+
+% styling
+\newcommand{\booktitle}{\textit} % citation of works in italics
+\newcommand{\latin}{\textit} % italicize latin words
+\newcommand{\margintext}[1]{\textit{\small #1}} % margin notes
+\newcommand{\principle}{\ul} %for principles, definitions, and components of the aforesaid
+\newcommand{\quoting}{\textit}
+%\newcommand{\repeatafter}{%
+  %\thispagestyle{empty}%
+  %\addtocounter{page}{-1}%
+  %\null\newpage
+  %\afterpage{\repeatafter}%
+%}
+
+% lists
+\newcommand{\bnotes}{\begin{itemize}}
+\newcommand{\enotes}{\end{itemize}}
+
+\newcommand{\blist}{\begin{enumerate}}
+\newcommand{\elist}{\end{enumerate}}
+
+\newcommand{\bdefs}{\begin{description}}
+\newcommand{\edefs}{\end{description}}
+
+\newcommand{\pcl}{\begin{paracol}}
+\newcommand{\ecl}{\end{paracol}}
+\newcommand{\sw}{\switchcolumn}
+\newcommand{\swc}{\switchcolumn*}
+
+% list settings
+%\setlist[description]{font=\normalfont,align=left}
+%[labelwidth=\widthof{}]
+
+% skips-horizontal
+\newcommand{\smallwidth}{\hskip 1em}
+\newcommand{\medwidth}{\hskip 3pt}
+\newcommand{\largewidth}{\hskip 12pt}
+
+% skips-vertical
+\newcommand{\linespace}{\vskip 4pt}
+\newcommand{\paragraphspace}{\vskip 6pt}
+\newcommand{\segmentspace}{\vskip 12pt}
+\newcommand{\quotespace}{\vskip 16pt} % quote lead before/after
+\newcommand{\sectionspace}{\vskip 24pt}
+
+% page spacings; these are declarations
+\parindent=0pt
+\newcommand{\parset}{\parindent=1em}
+\newcommand{\firstpar}{\noindent}
+\renewcommand{\baselinestretch}{1.2}
+\emergencystretch=3em
+\columnsep=1em
+%\reversemarginpar
+
+%%%%%%%%%%
+\begin{document}
+
+%%
+%% Title page
+\thispagestyle{empty}
+
+\headerone{Serving Guide}{Traditional Latin Mass}
+
+\vfill
+\begin{center}
+\includegraphics[width=\linewidth]{latin-mass}
+\end{center}
+
+\vfill
+
+\begin{center}
+
+%\begin{quote}
+
+  \em
+  Know that nothing in the world is so precious, so useful, so noble, so sublime as the Holy Mass.
+
+  \quotespace
+
+  St. Leonard of Port Maurice
+
+%\end{quote}
+
+\end{center}
+
+\vfill
+
+%% Blank page = back side of title
+
+%\afterpage{\repeatafter}
+\newpage
+\thispagestyle{empty}
+\null
+
+%%
+%% Principles page
+
+\newpage
+\thispagestyle{empty}
+
+\headerthree{Liturgical Principles}
+
+
+Division of Mass
+\blist
+
+  \item Mass of the Catechumens -- Preparation for the most holy act of religion.
+
+    \blist
+
+      \item[1.] Prayer -- The beginning of turning to God.
+
+      \item[2.] Instruction -- Hear God's word.
+
+    \elist
+
+  \item Mass of the Faithful -- The sacrifice of the Eucharist.
+
+    \blist
+
+      \item[1.] Sacrifice -- Offer Jesus Christ to God the Father.
+
+      \item[2.] Communion -- Union with the Lamb of God.
+
+    \elist
+
+\elist
+
+Motions and Actions
+
+\begin{quote}
+
+  \begin{center}\em
+
+  The movements of a server at the altar should be grave, reverent, and as noiseless as possible.
+
+  Fr. J. O'Connell
+
+  \end{center}
+
+\end{quote}
+
+\segmentspace
+
+\bnotes
+
+  \item Hands should be in the ``prayer position'' by default. Hands joined and in front of the breast.
+  \item If one hand is being used, put the idle hand flat on the chest.
+  \item Avoid turning your back to the Blessed Sacrament or the cross.
+  \item The default position is kneeling.
+  \item Generally, one should kneel on the opposite side of the Missal.
+  \item Match the vocal volume of the priest.
+  \item Responses must be precise and clear.
+  \item The bell should be rung moderately.
+  \item Genuflecting is a continuous action. There is no pause when the knee touches the ground.
+  \item Actions should be precise and restrained. Do not add gestures.
+
+\enotes
+
+% Blank page = back of principles page
+
+%\afterpage{\repeatafter}
+\newpage
+\thispagestyle{empty}
+\null
+
+
+%%
+%% Mass of the Catechumens
+
+\newpage
+\setcounter{page}{3}
+
+\headertwo{Mass of the Catechumens}
+
+\begin{center}
+  \vskip -0.4 in
+\rule{3.5 in}{0.4 pt}
+\end{center}
+
+\headerthree{Prayer}
+
+Prayers at the Foot of the Altar
+
+\bnotes
+
+  \item Server kneels to the left of the priest, slightly behind him.
+  \item Alternate responses to Psalm 42 and following prayers, as in the Response Card.
+  \item When the priest says \latin{Oremus}, or slightly before, lift up his alb and cassock before his feet to give him a clear path up the steps.
+  \item Rise, go to the left of the altar steps (Gospel side), kneel on the lowest step.
+
+\enotes
+
+Introit, Kyrie, Gloria
+
+\bnotes
+
+  \item Make the sign of the cross at the beginning of the Introit.
+  \item Alternate \latin{Kyrie eleison} and \latin{Christe eleison} with the priest, according to the Response Card.
+  \item During \latin{Gloria in excelsis}, bow head along with the priest.
+  \item Make the sign of the cross at the end, \latin{Cum Sancto Spiritu...}
+  \item Make the proper responses for the Collects, as in the Response Card.
+
+\enotes
+
+\headerthree{Instruction}
+
+Epistle
+
+\bnotes
+
+  \item At the beginning of the Epistle, the priest will place his hands on the side of the Missal.
+  \item When he finishes the Epistle, he will place his left hand on the altar to signal the Epistle is finished.
+  \item Respond \latin{Deo gratias}.
+
+\enotes
+
+Gospel
+
+\bnotes
+
+  \item Rise, go to the center, genuflect, walk around the steps to the Epistle corner, where the priest is reading the Gradual and Alleluia verses.
+  \item (On some feast days, there is a Sequence. Do not rise and move until the Sequence is almost over.)
+  \item When the priest moves toward the center, ascend the altar steps and take the Missal-stand in both hands.
+  \item Go down the steps diagonally toward the center.
+  \item Genuflect in the center, and go up the steps to the left and place the Missal-stand at an angle in the Gospel corner.
+  \item Go to the lowest step and stand so that you will be facing the priest.
+  \item Make the responses and the three small signs of the cross.
+  \item Wait for the name of Jesus, bow your head, then go down the last step.
+  \item (If the Holy Name does not come, leave after several seconds. Do not bow your head.)
+  \item Walk around the steps to the opposite corner, genuflecting at the center.
+  \item Turn at an angle to face in the same way as the priest.
+  \item When he stops reading the Gospel, say \latin{Laus tibi, Christe.}
+  \item Face forward and kneel down.
+
+\enotes
+
+
+Sermon
+\bnotes
+
+  \item On Sundays, there will be a sermon.
+  \item By exception, remain standing after the Gospel.
+  \item The priest will take off his Maniple, then descend down the steps.
+  \item Kneel with the priest and pray.
+  \item Having prayed, rise, genuflect, and go to your seat.
+  \item When the sermon is done, go back to the center.
+  \item Genuflect, then lift the priest's alb and cassock for him to rise up the steps.
+  \item Kneel on the lowest step.
+
+\enotes
+
+
+Creed
+\bnotes
+
+  \item On Sundays and feast days, the Nicene Creed will be recited.
+  \item Stay kneeling for the Creed.
+  \item Bow your head when the priest does.
+  \item The priest will slowly begin genuflecting at \latin{Et incarnatus est...}
+  \item Slowly bow over as he descends. Stop at the profound bow position. Then, rise slowly as he does.
+  \item Make the sign of the cross with the priest at \latin{Et vitam venturi...}
+
+\enotes
+
+
+%%
+%% Mass of the Faithful
+
+\newpage
+
+\headertwo{Mass of the Faithful}
+
+\begin{center}
+  \vskip -0.35 in
+\rule{2.85 in}{0.4 pt}
+\end{center}
+
+\headerthree{Sacrifice}
+
+Offertory
+\bnotes
+
+  \item Respond to priest and bow head at \latin{Oremus}.
+  \item When he finishes reading the Offertory verse, rise and go to the credence table.
+  \item Obtain the cruets of wine and water. Remove the stoppers.
+  \item Stand near the altar, with the altar table in front of you.
+  \item Bow as the priest approaches and kiss the cruets.
+  \item Hand the wine when he reaches for it.
+  \item Take back the wine and hold out the water for him to bless it. Then, give him the water cruet.
+  \item Receive back the water cruet.
+  \item Kiss both cruets, bow, and return to the credence table.
+  \item Place both cruets down, and take the water dish and finger towel in your left hand.
+  \item Take the water cruet in your right hand.
+  \item Return to the altar. This time face the open space, where the priest is standing.
+  \item Bow as he approaches, and pour a little water over his fingers until he signals to stop.
+  \item Present the finger towel or simply let him take it. Present your arm to receive the towel back.
+  \item Bow, return to the credence table, and put everything back in place.
+  \item Return to your place on the lowest step.
+  \item The priest will shortly turn around and say \latin{Orate, fratres.}
+  \item Wait until he completes turning, bow down moderately, and respond \latin{Suscipiat...}
+
+\enotes
+
+
+Preface
+\bnotes
+
+  \item When the priest is done silently reading the prayers, he will say out loud, \latin{Per omnia...}
+  \item Make the correct responses as indicated in the Response Card.
+  \item When he bows and says \latin{Sanctus} for the first time, ring the bell three times.
+  \item If you can, make the sign of the cross at \latin{Benedictus} with the priest.
+
+\enotes
+
+
+Canon
+\bnotes
+
+  \item The priest will extend his hands at the prayer called \latin{Hanc Igitur}.
+  \item Ring the bell one time.
+  \item Then, ascend to the top platform.
+  \item When the priest bends over to say the words of consecration, bow down moderately.
+  \item Ring the bell when the priest genuflects.
+  \item Lift up his chasuble slightly, then ring the bell as he raises the Sacred Host.
+  \item Ring the bell a third time when he genuflects.
+  \item Bow again when he says the words of consecration over the chalice.
+  \item Ring the bell when he genuflects, raise the chasuble again and ring the bell, then ring the bell a third time when he genuflects.
+  \item After the consecration, descend to the floor, genuflect, and return to your place on the bottom step.
+
+\enotes
+
+
+Post-Canon Prayers
+\bnotes
+
+  \item Remain in silence until the priest says \latin{Per omnia...}
+  \item Respond correctly for this prayer and the next, as in the Response Card.
+  \item When the priest says \latin{Agnus Dei}, bow moderately and strike your breast.
+  \item The priest will take the Host, bend over, and say \latin{Domine, non sum dignus...}
+  \item Ring the bell each time he says this, for three times total.
+  \item Bow moderately when he consumes the Host.
+
+\enotes
+
+
+\headerthree{Communion}
+
+Communion
+\bnotes
+
+  \item The priest will take off the pall over the chalice.
+  \item Stand up and retrieve the communion paten from the credence table.
+  \item Go to the steps, genuflect, and ascend.
+  \item Kneel on the top step if you will take communion.
+    \bnotes
+      \item[•]If you will not communicate, kneel on the bottom step.
+    \enotes
+  \item When the priest drinks the Precious Blood, bow moderately and recite the \latin{Confiteor} on behalf of the people.
+  \item Respond as in the first \latin{Confiteor}.
+  \item If you are going to receive, strike your breast at \latin{Domine, non sum dignus...}
+  \item Walk with the priest to the communion rail.
+  \item Carefully hold the paten under the chin of each person.
+    \bnotes
+      \item[•]But, make sure to keep moving so that you allow the priest to move fluidly.
+    \enotes
+  \item After the last person, hand the communion paten back to the priest.
+  \item Accompany him to the altar steps. Lift his alb and cassock as he ascends the steps.
+  \item Stand at the steps. Genuflect when the priest does.
+  \item Then, go to the Epistle side and kneel on the side of the steps.
+
+\enotes
+
+
+Ablutions
+\bnotes
+
+  \item When the priest closes the tabernacle, rise and go to the credence table.
+  \item Retrieve the cruets again and wait along the Epistle side.
+  \item The priest will have his chalice tilted. Go up and pour wine carefully into the chalice.
+  \item When he signals to stop, go back down the steps.
+  \item When the priest comes to the Epistle side, carefully pour wine and then water over his fingers into the chalice until he signals to stop.
+  \item Return the cruets to the credence table.
+  \item Take the communion paten from the altar and put that back on the credence table.
+  \item Go the long way to the Gospel side, genuflecting at the middle.
+  \item Take the bookstand and go down diagonally to the center. Genuflect.
+  \item Ascend the steps diagonally and place the bookstand parallel to the edge.
+  \item Descend the stairs on the side. Go to the Gospel side the long way and kneel on the lowest step.
+  \item Make all the responses to the following prayers.
+
+\enotes
+
+
+Conclusion
+\bnotes
+
+  \item After the blessing, the priest will say the Last Gospel.
+    \bnotes
+      \item[•]If there is a proper Last Gospel, the priest will leave the Missal open after the last prayers.
+      \item[•]Bring back the bookstand to the Gospel side the same way you did after the Ablutions.
+      \item[•]Except, wait for the blessing in the center of the bottom step.
+    \enotes
+  \item After the priest begins the Last Gospel, go to the Epistle side, genuflecting at the middle.
+  \item Kneel on the step with the priest for the Leonine Prayers.
+  \item When the prayers are done, lift the priest's alb and cassock as he goes up the steps to get the chalice.
+  \item After he goes up the steps, get his biretta.
+  \item Kiss the biretta, then the priest's hand.
+  \item Return to the sacristy and receive the blessing.
+  \item Either prepare for the next Mass or, if that is the last Mass at the altar, put everything back in order.
+
+\enotes
+
+%%%%%%%%%%
+\end{document}
+
